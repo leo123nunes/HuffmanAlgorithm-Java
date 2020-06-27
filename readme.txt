@@ -26,5 +26,6 @@ Autor: Leonardo Nunes de Oliveira
 Disciplina Projeto Integrador I - Grupo K
 Curso: Ciências da Computação
 IESB ASA SUL - Brasília DF
+Endereço GitHub: https://github.com/leo123nunes/Project6-HuffmanAlgorithm-Java
 -------------------------------------------------------------------------------------------------------------
 
