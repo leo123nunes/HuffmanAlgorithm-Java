@@ -23,24 +23,23 @@ public class HuffmanCode {
 
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(sourcePath));
-			StringBuffer textOfFilee = new StringBuffer();
+			StringBuffer textOfFilee = new StringBuffer(1000000000);
 			textOfFilee.append(br.readLine());
 			String line = "";
 
 			// Escrevendo na String textOfFile os caracteres do arquivo
-
+			Map map = new Map(255);
+			
 			while (line != null) {
 				textOfFilee.append(line);
+				for(char x : textOfFilee.toString().toCharArray()) {
+					map.addElement(x);
+				}
+				map.addElement('\n');
 				line = br.readLine();
-				textOfFilee = textOfFilee.append("\n");
+				textOfFilee = new StringBuffer();
 			}
 			br.close();
-
-			System.gc();
-			Map map = new Map(255);
-			for (int c = 0; c < textOfFilee.length(); c++) {
-				map.addElement(textOfFilee.charAt(c));
-			}
 
 			System.out.println();
 			System.out.println("FOLHAS DA ARVORE BINARIA");
@@ -64,8 +63,25 @@ public class HuffmanCode {
 			BufferedBitWriter bb = new BufferedBitWriter(destinyPath);
 			long quantidadeBits = 0;
 			StringBuffer codedText = new StringBuffer();
-			for (int i = 0; i < textOfFilee.length(); i++) {
-				codedText.append(dictionary.searchForCode(textOfFilee.charAt(i)));
+			BufferedReader br3 = new BufferedReader(new FileReader(sourcePath));
+			String line2 = "";
+			line2 = br3.readLine();
+			while(line2 != null) {
+				for(char c : line2.toCharArray()) {
+					codedText.append(dictionary.searchForCode(c));
+					for (int u = 0; u < codedText.length(); u++) {
+						if (codedText.charAt(u) == '1') {
+							bb.writeBit(1);
+							quantidadeBits++;
+						} else {
+							bb.writeBit(0);
+							quantidadeBits++;
+						}
+					}
+					
+					codedText = new StringBuffer();
+				}
+				codedText.append(dictionary.searchForCode('\n'));
 				for (int u = 0; u < codedText.length(); u++) {
 					if (codedText.charAt(u) == '1') {
 						bb.writeBit(1);
@@ -76,7 +92,10 @@ public class HuffmanCode {
 					}
 				}
 				codedText = new StringBuffer();
+				line2 = br3.readLine();
 			}
+			
+			br3.close();
 			
 			bb.close();
 
