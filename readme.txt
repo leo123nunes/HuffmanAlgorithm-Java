@@ -1,31 +1,31 @@
-ALGORITIMO DE HUFFMAN - COMPRESSÃO E DESCOMPRESSÃO DE
-ARQUIVOS DE TEXTO
+HUFFMAN ALGORITHM - COMPRESSION AND DECOMPRESSION OF
+TEXT FILES
 -------------------------------------------------------------------------------------------------------------
-Compatibilidade do Sistema Operacional: Windows 8 Pro ou Windows 10 Pro.
+Operating System Compatibility: Windows 8 Pro or Windows 10 Pro.
 -------------------------------------------------------------------------------------------------------------
-Entrada: Arquivo de texto .txt
+Input: .txt text file
 -------------------------------------------------------------------------------------------------------------
-Possui compatibilidade com as IDE:
+It has compatibility with IDE:
 Eclipse IDE for Java Developers Version: 2020-03 (4.15.0)
 Apache NetBeans IDE 11.1
 -------------------------------------------------------------------------------------------------------------
-Necessidade de instalação do Java SE Development Kit 11.0.4
+Need to install Java SE Development Kit 11.0.4
 -------------------------------------------------------------------------------------------------------------
-FUNCIONAMENTO DA APLICAÇÃO
+FUNCTIONING OF THE APPLICATION
 
-Para abrir a aplicação na IDE basta importar a pasta do projeto.
+To open the application in the IDE, just import the project folder.
 
-A classe main da aplicação é a HuffmanCode da pasta src, ao executa-la ela irá solicitar
-o caminho de origem do documento de texto .txt para ser realizado a compressão.
-Logo em seguida, digite o caminho de destino para o arquivo copactado.
+The main class of the application is the HuffmanCode of the src folder, when executing it it will request
+the source path of the .txt text document to be compressed.
+Then, enter the destination path for the copied file.
 
-Após a compactação feita, digite a tecla 's' para realizar a descompressão, e 
-em seguida digite o caminho para o arquivo descompactado.
+After the compression is done, type the 's' key to decompress, and
+then enter the path to the unzipped file.
 -------------------------------------------------------------------------------------------------------------
-Autor: Leonardo Nunes de Oliveira
-Disciplina Projeto Integrador I - Grupo K
-Curso: Ciências da Computação
+Author: Leonardo Nunes de Oliveira
+Discipline Project Integrator I - Group K
+Course: Computer Science
 IESB ASA SUL - Brasília DF
-Endereço GitHub: https://github.com/leo123nunes/Project6-HuffmanAlgorithm-Java
+GitHub address: https://github.com/leo123nunes/Project6-HuffmanAlgorithm-Java
 -------------------------------------------------------------------------------------------------------------
 
