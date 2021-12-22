@@ -23,9 +23,8 @@ After the compression is done, type the 's' key to decompress, and
 then enter the path to the unzipped file.
 -------------------------------------------------------------------------------------------------------------
 Author: Leonardo Nunes de Oliveira
-Discipline Project Integrator I - Group K
 Course: Computer Science
-IESB ASA SUL - Brasília DF
-GitHub address: https://github.com/leo123nunes/Project6-HuffmanAlgorithm-Java
+Centro Universitárpio IESB - Brasília DF
+GitHub address: https://github.com/leo123nunes/java_huffmanalgorithm
 -------------------------------------------------------------------------------------------------------------
 
